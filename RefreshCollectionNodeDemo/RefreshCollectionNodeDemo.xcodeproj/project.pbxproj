@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		640722B707E0E7ADB608E4F9 /* Pods_RefreshCollectionNodeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D60FEBE90E3F77ADDBED23D /* Pods_RefreshCollectionNodeDemo.framework */; };
+		9FCCCDDE201707F5000C6BE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCCDDD201707F5000C6BE7 /* AppDelegate.swift */; };
+		9FCCCDE0201707F5000C6BE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCCDDF201707F5000C6BE7 /* ViewController.swift */; };
+		9FCCCDE3201707F5000C6BE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCCCDE1201707F5000C6BE7 /* Main.storyboard */; };
+		9FCCCDE5201707F5000C6BE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCCCDE4201707F5000C6BE7 /* Assets.xcassets */; };
+		9FCCCDE8201707F5000C6BE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCCCDE6201707F5000C6BE7 /* LaunchScreen.storyboard */; };
+		9FCCCE0320170B46000C6BE7 /* PhotoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCCE0220170B46000C6BE7 /* PhotoNode.swift */; };
+		9FCCCE0520170BA7000C6BE7 /* GlobalFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCCE0420170BA7000C6BE7 /* GlobalFormatting.swift */; };
+		9FCCCE0720170BB9000C6BE7 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCCE0620170BB9000C6BE7 /* Then.swift */; };
+		9FCCCE0920170BFA000C6BE7 /* PhotoContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCCE0820170BFA000C6BE7 /* PhotoContentNode.swift */; };
+		9FCCCE0D20170C79000C6BE7 /* UserInfoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCCE0C20170C79000C6BE7 /* UserInfoNode.swift */; };
+		9FCCCE0F20170CF1000C6BE7 /* TimelinCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCCE0E20170CF1000C6BE7 /* TimelinCellNode.swift */; };
+		9FCCCE1120170E7D000C6BE7 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCCE1020170E7D000C6BE7 /* TimelineViewController.swift */; };
+		9FCCCE1620170F8C000C6BE7 /* ASNetImageManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCCE1520170F8C000C6BE7 /* ASNetImageManage.swift */; };
+		9FCCCE1820170FCB000C6BE7 /* MyNetImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCCE1720170FCB000C6BE7 /* MyNetImageNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0646E5B13616C74AAD5C8C97 /* Pods-RefreshCollectionNodeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefreshCollectionNodeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RefreshCollectionNodeDemo/Pods-RefreshCollectionNodeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9D60FEBE90E3F77ADDBED23D /* Pods_RefreshCollectionNodeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RefreshCollectionNodeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCCCDDA201707F5000C6BE7 /* RefreshCollectionNodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefreshCollectionNodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCCCDDD201707F5000C6BE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FCCCDDF201707F5000C6BE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FCCCDE2201707F5000C6BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FCCCDE4201707F5000C6BE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FCCCDE7201707F5000C6BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FCCCDE9201707F5000C6BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FCCCE0220170B46000C6BE7 /* PhotoNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoNode.swift; sourceTree = "<group>"; };
+		9FCCCE0420170BA7000C6BE7 /* GlobalFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFormatting.swift; sourceTree = "<group>"; };
+		9FCCCE0620170BB9000C6BE7 /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		9FCCCE0820170BFA000C6BE7 /* PhotoContentNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoContentNode.swift; sourceTree = "<group>"; };
+		9FCCCE0C20170C79000C6BE7 /* UserInfoNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoNode.swift; sourceTree = "<group>"; };
+		9FCCCE0E20170CF1000C6BE7 /* TimelinCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinCellNode.swift; sourceTree = "<group>"; };
+		9FCCCE1020170E7D000C6BE7 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		9FCCCE1520170F8C000C6BE7 /* ASNetImageManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASNetImageManage.swift; sourceTree = "<group>"; };
+		9FCCCE1720170FCB000C6BE7 /* MyNetImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNetImageNode.swift; sourceTree = "<group>"; };
+		EB3890979890A3C75C28020F /* Pods-RefreshCollectionNodeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefreshCollectionNodeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RefreshCollectionNodeDemo/Pods-RefreshCollectionNodeDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FCCCDD7201707F5000C6BE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640722B707E0E7ADB608E4F9 /* Pods_RefreshCollectionNodeDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BA4C0C8525A1CAC8E8151EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D60FEBE90E3F77ADDBED23D /* Pods_RefreshCollectionNodeDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EE35ED4355C7C86C37E1FB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0646E5B13616C74AAD5C8C97 /* Pods-RefreshCollectionNodeDemo.debug.xcconfig */,
+				EB3890979890A3C75C28020F /* Pods-RefreshCollectionNodeDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9FCCCDD1201707F5000C6BE7 = {
+			isa = PBXGroup;
+			children = (
+				9FCCCDDC201707F5000C6BE7 /* RefreshCollectionNodeDemo */,
+				9FCCCDDB201707F5000C6BE7 /* Products */,
+				9EE35ED4355C7C86C37E1FB9 /* Pods */,
+				1BA4C0C8525A1CAC8E8151EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9FCCCDDB201707F5000C6BE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FCCCDDA201707F5000C6BE7 /* RefreshCollectionNodeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FCCCDDC201707F5000C6BE7 /* RefreshCollectionNodeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9FCCCE1420170F69000C6BE7 /* NetImageManage */,
+				9FCCCE1320170F29000C6BE7 /* Util */,
+				9FCCCE1220170F1C000C6BE7 /* Timeline */,
+				9FCCCDDD201707F5000C6BE7 /* AppDelegate.swift */,
+				9FCCCDDF201707F5000C6BE7 /* ViewController.swift */,
+				9FCCCDE1201707F5000C6BE7 /* Main.storyboard */,
+				9FCCCDE4201707F5000C6BE7 /* Assets.xcassets */,
+				9FCCCDE6201707F5000C6BE7 /* LaunchScreen.storyboard */,
+				9FCCCDE9201707F5000C6BE7 /* Info.plist */,
+			);
+			path = RefreshCollectionNodeDemo;
+			sourceTree = "<group>";
+		};
+		9FCCCE1220170F1C000C6BE7 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				9FCCCE0220170B46000C6BE7 /* PhotoNode.swift */,
+				9FCCCE0820170BFA000C6BE7 /* PhotoContentNode.swift */,
+				9FCCCE0C20170C79000C6BE7 /* UserInfoNode.swift */,
+				9FCCCE0E20170CF1000C6BE7 /* TimelinCellNode.swift */,
+				9FCCCE1020170E7D000C6BE7 /* TimelineViewController.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		9FCCCE1320170F29000C6BE7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9FCCCE0420170BA7000C6BE7 /* GlobalFormatting.swift */,
+				9FCCCE0620170BB9000C6BE7 /* Then.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		9FCCCE1420170F69000C6BE7 /* NetImageManage */ = {
+			isa = PBXGroup;
+			children = (
+				9FCCCE1520170F8C000C6BE7 /* ASNetImageManage.swift */,
+				9FCCCE1720170FCB000C6BE7 /* MyNetImageNode.swift */,
+			);
+			path = NetImageManage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FCCCDD9201707F5000C6BE7 /* RefreshCollectionNodeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCCCDEC201707F5000C6BE7 /* Build configuration list for PBXNativeTarget "RefreshCollectionNodeDemo" */;
+			buildPhases = (
+				FAEB06708CD74956E01A73B9 /* [CP] Check Pods Manifest.lock */,
+				9FCCCDD6201707F5000C6BE7 /* Sources */,
+				9FCCCDD7201707F5000C6BE7 /* Frameworks */,
+				9FCCCDD8201707F5000C6BE7 /* Resources */,
+				5EFE41514C4945A7F0AF0C6D /* [CP] Embed Pods Frameworks */,
+				F97036C059158630A6C03F68 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RefreshCollectionNodeDemo;
+			productName = RefreshCollectionNodeDemo;
+			productReference = 9FCCCDDA201707F5000C6BE7 /* RefreshCollectionNodeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FCCCDD2201707F5000C6BE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ShevaKuilin;
+				TargetAttributes = {
+					9FCCCDD9201707F5000C6BE7 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9FCCCDD5201707F5000C6BE7 /* Build configuration list for PBXProject "RefreshCollectionNodeDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FCCCDD1201707F5000C6BE7;
+			productRefGroup = 9FCCCDDB201707F5000C6BE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FCCCDD9201707F5000C6BE7 /* RefreshCollectionNodeDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FCCCDD8201707F5000C6BE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCCCDE8201707F5000C6BE7 /* LaunchScreen.storyboard in Resources */,
+				9FCCCDE5201707F5000C6BE7 /* Assets.xcassets in Resources */,
+				9FCCCDE3201707F5000C6BE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EFE41514C4945A7F0AF0C6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RefreshCollectionNodeDemo/Pods-RefreshCollectionNodeDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RefreshCollectionNodeDemo/Pods-RefreshCollectionNodeDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97036C059158630A6C03F68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RefreshCollectionNodeDemo/Pods-RefreshCollectionNodeDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEB06708CD74956E01A73B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RefreshCollectionNodeDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FCCCDD6201707F5000C6BE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCCCDE0201707F5000C6BE7 /* ViewController.swift in Sources */,
+				9FCCCE0520170BA7000C6BE7 /* GlobalFormatting.swift in Sources */,
+				9FCCCE0920170BFA000C6BE7 /* PhotoContentNode.swift in Sources */,
+				9FCCCDDE201707F5000C6BE7 /* AppDelegate.swift in Sources */,
+				9FCCCE1620170F8C000C6BE7 /* ASNetImageManage.swift in Sources */,
+				9FCCCE0720170BB9000C6BE7 /* Then.swift in Sources */,
+				9FCCCE1120170E7D000C6BE7 /* TimelineViewController.swift in Sources */,
+				9FCCCE1820170FCB000C6BE7 /* MyNetImageNode.swift in Sources */,
+				9FCCCE0D20170C79000C6BE7 /* UserInfoNode.swift in Sources */,
+				9FCCCE0320170B46000C6BE7 /* PhotoNode.swift in Sources */,
+				9FCCCE0F20170CF1000C6BE7 /* TimelinCellNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9FCCCDE1201707F5000C6BE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FCCCDE2201707F5000C6BE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FCCCDE6201707F5000C6BE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FCCCDE7201707F5000C6BE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FCCCDEA201707F5000C6BE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FCCCDEB201707F5000C6BE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FCCCDED201707F5000C6BE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0646E5B13616C74AAD5C8C97 /* Pods-RefreshCollectionNodeDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RefreshCollectionNodeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shevakuilin.RefreshCollectionNodeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FCCCDEE201707F5000C6BE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3890979890A3C75C28020F /* Pods-RefreshCollectionNodeDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RefreshCollectionNodeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = shevakuilin.RefreshCollectionNodeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FCCCDD5201707F5000C6BE7 /* Build configuration list for PBXProject "RefreshCollectionNodeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCCCDEA201707F5000C6BE7 /* Debug */,
+				9FCCCDEB201707F5000C6BE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FCCCDEC201707F5000C6BE7 /* Build configuration list for PBXNativeTarget "RefreshCollectionNodeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCCCDED201707F5000C6BE7 /* Debug */,
+				9FCCCDEE201707F5000C6BE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FCCCDD2201707F5000C6BE7 /* Project object */;
+}

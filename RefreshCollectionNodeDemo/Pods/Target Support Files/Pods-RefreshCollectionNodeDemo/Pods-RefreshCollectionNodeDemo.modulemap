@@ -1,0 +1,6 @@
+framework module Pods_RefreshCollectionNodeDemo {
+  umbrella header "Pods-RefreshCollectionNodeDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
