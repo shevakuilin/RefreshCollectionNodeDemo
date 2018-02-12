@@ -38,22 +38,19 @@ class TimelineViewController: ASViewController<ASDisplayNode>  {
     // NOTE: 设置刷新加载
     private func setRefresh() {
         weak var weakSelf = self
-        guard let wself = weakSelf else{
-            return
-        }
         timeline.view.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
-            wself.timeline.view.mj_header.beginRefreshing()
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-                wself.timeline.view.mj_header.endRefreshing()
-                wself.timeline.reloadData()
+            weakSelf?.timeline.view.mj_header.beginRefreshing()
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()) {
+                weakSelf?.timeline.view.mj_header.endRefreshing()
+                weakSelf?.timeline.reloadData()
             }
         })
         
         timeline.view.mj_footer = MJRefreshBackNormalFooter.init(refreshingBlock:{
-            wself.timeline.view.mj_footer.beginRefreshing()
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5, execute: {
-                wself.timeline.view.mj_footer.endRefreshing()
-                wself.timeline.reloadData()
+            weakSelf?.timeline.view.mj_footer.beginRefreshing()
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now(), execute: {
+                weakSelf?.timeline.view.mj_footer.endRefreshing()
+                weakSelf?.timeline.reloadData()
             })
         })
     }

@@ -78,15 +78,26 @@ class PhotoContentNode: ASDisplayNode {
         self.addSubnode(photosNode)
     }
     
-    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let verticalStackSpec = ASStackLayoutSpec(direction: .vertical,
-                                                  spacing: 0,
-                                                  justifyContent: .start,
-                                                  alignItems: .start,
-                                                  children: [photosNode])
-        
-        return ASInsetLayoutSpec(insets: UIEdgeInsetsMake(10, 10, 10, -10), child: verticalStackSpec)
+    override func layout() {
+        super.layout()
+        photosNode.frame = CGRect(x: 14, y: bounds.origin.y, width: bounds.size.width, height: bounds.size.height)
+        photosNode.reloadData()
+        photosNode.waitUntilAllUpdatesAreProcessed()
     }
+    
+    override func calculateSizeThatFits(_ constrainedSize: CGSize) -> CGSize {
+        return CGSize(width: constrainedSize.width, height: ElementSize.photoNodeHeightDouble + 23)
+    }
+    
+//    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+//        let verticalStackSpec = ASStackLayoutSpec(direction: .vertical,
+//                                                  spacing: 0,
+//                                                  justifyContent: .start,
+//                                                  alignItems: .start,
+//                                                  children: [photosNode])
+//
+//        return ASInsetLayoutSpec(insets: UIEdgeInsetsMake(10, 10, 10, -10), child: verticalStackSpec)
+//    }
     
 }
 

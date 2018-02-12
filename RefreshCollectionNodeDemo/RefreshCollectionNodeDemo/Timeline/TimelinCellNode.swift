@@ -75,7 +75,7 @@ class TimelinCellNode: ASCellNode {
         self.addSubnode(userInfoNode)
         
         photoContenNode.style.width = ASDimensionMakeWithPoints(ElementSize.photoContenWidth)
-        photoContenNode.imagesCount = 6//kRandomInRange(0, 9)
+        photoContenNode.imagesCount = 4//kRandomInRange(0, 9)
         if photoContenNode.imagesCount == 4 {
             photoContenNode.style.height = ASDimensionMakeWithPoints(ElementSize.photoNodeHeightDouble + 23)
             photoContenNode.style.width = ASDimensionMakeWithPoints(ElementSize.photoNodeHeightDouble - 2.2)
